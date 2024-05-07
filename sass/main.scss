@@ -1,7 +1,88 @@
-@use "./index" as *;
-
-$clr-primary: #ffff00;
-
-body {
-  background-color: $clr-primary;
+@use "./abstracts/index" as *;
+@use "./base/index" as *;
+.nft {
+  min-height: 100vh;
+  background-color: $clr-very-dark-blue-main-bg;
+  padding: 3.875rem 0;
+  @include grid(null);
+  place-content: center;
+  &__section {
+    @include section-max-width;
+    &__card {
+      background-color: $clr-very-dark-blue-card-bg;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      @include grid(1rem);
+      &__header {
+        position: relative;
+        &__image {
+          border-radius: 0.5rem;
+        }
+        &__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $clr-cyan-with-opacity;
+          opacity: 0;
+          border-radius: 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.3s ease;
+          &:hover {
+            opacity: 1;
+          }
+          &__icon {
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+      }
+      &__body {
+        @include grid(1rem);
+        &__description {
+          font-size: 1.125rem;
+          font-family: $font-outfit-light;
+        }
+        &__pricing-expiration-details {
+          @include flex(1rem);
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        &__pricing-details,
+        &__expiration-details {
+          @include flex(0.5rem);
+          align-items: center;
+          &__price {
+            font-family: $font-outfit-bold;
+            color: $clr-cyan;
+          }
+        }
+      }
+      &__horizontal__line {
+        border: 0;
+        border-top: 0.0625rem solid $clr-very-dark-blue-line;
+      }
+      &__footer {
+        &__creator {
+          @include flex(1rem);
+          align-items: center;
+          &__image {
+            width: 2.0625rem;
+            height: 2.0625rem;
+            border-radius: 50%;
+            border: 0.0625rem solid $clr-white;
+          }
+          &__caption {
+            &__name {
+              color: $clr-white;
+            }
+          }
+        }
+      }
+    }
+  }
 }

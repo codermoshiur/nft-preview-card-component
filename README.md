@@ -1,4 +1,4 @@
-# Frontend Mentor - Challange name
+# Frontend Mentor - NFT preview card component
 
 ## Overview
 
@@ -6,11 +6,7 @@
 
 #### Desktop
 
-![](Screenshot)
-
-#### Mobile
-
-![](Screenshot)
+![](./design/desktop.png)
 
 ### Links
 
@@ -22,9 +18,10 @@
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - CSS Grid
+- CSS Flex
 - Mobile-first workflow
+- Sass
 
 ## Author
 

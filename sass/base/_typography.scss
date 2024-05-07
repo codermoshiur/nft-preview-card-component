@@ -1,0 +1,13 @@
+@use "../abstracts/index" as *;
+body {
+  color: $clr-soft-blue;
+  font-family: $font-outfit-regular;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-family: $font-outfit-bold;
+  font-size: 1.375rem;
+  color: $clr-white;
+}

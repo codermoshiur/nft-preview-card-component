@@ -1,5 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  src: url(../assets/fonts/Outfit-Light.ttf);
+  font-family: "Outfit-Light";
+  font-weight: 300;
+}
+@font-face {
+  src: url(../assets/fonts/Outfit-Regular.ttf);
+  font-family: "Outfit-Regular";
+  font-weight: 300;
+}
+@font-face {
+  src: url(../assets/fonts/Outfit-Bold.ttf);
+  font-family: "Outfit-Bold";
+  font-weight: 700;
+}
 body {
-  background-color: #ffff00;
+  color: #8bacd9;
+  font-family: "Outfit-Regular", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: "Outfit-Bold", sans-serif;
+  font-size: 1.375rem;
+  color: #ffffff;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.nft {
+  min-height: 100vh;
+  background-color: #0d192c;
+  padding: 3.875rem 0;
+  display: grid;
+  grid-template-columns: auto;
+  place-content: center;
+}
+.nft__section {
+  max-width: 23.4375rem;
+  margin-inline: auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+.nft__section__card {
+  background-color: #15263f;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+.nft__section__card__header {
+  position: relative;
+}
+.nft__section__card__header__image {
+  border-radius: 0.5rem;
+}
+.nft__section__card__header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.5);
+  opacity: 0;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nft__section__card__header__overlay:hover {
+  opacity: 1;
+}
+.nft__section__card__header__overlay__icon {
+  width: 3rem;
+  height: 3rem;
+}
+.nft__section__card__body {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+.nft__section__card__body__description {
+  font-size: 1.125rem;
+  font-family: "Outfit-Light", sans-serif;
+}
+.nft__section__card__body__pricing-expiration-details {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nft__section__card__body__pricing-details, .nft__section__card__body__expiration-details {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.nft__section__card__body__pricing-details__price, .nft__section__card__body__expiration-details__price {
+  font-family: "Outfit-Bold", sans-serif;
+  color: #00fff8;
+}
+.nft__section__card__horizontal__line {
+  border: 0;
+  border-top: 0.0625rem solid #2e405a;
+}
+.nft__section__card__footer__creator {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nft__section__card__footer__creator__image {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border-radius: 50%;
+  border: 0.0625rem solid #ffffff;
+}
+.nft__section__card__footer__creator__caption__name {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

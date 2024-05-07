@@ -1,0 +1,16 @@
+@use "./variables" as *;
+@mixin section-max-width {
+  max-width: $max-width;
+  margin-inline: auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+@mixin grid($gap) {
+  display: grid;
+  grid-template-columns: auto;
+  gap: $gap;
+}
+@mixin flex($gap) {
+  display: flex;
+  gap: $gap;
+}
