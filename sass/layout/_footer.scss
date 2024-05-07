@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+.footer {
+  background-color: $clr-very-dark-blue-main-bg;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 0.0625rem solid $clr-very-dark-blue-line;
+  &__section {
+    @include section;
+    &__attribution {
+      font-size: 0.75rem;
+      &__link {
+        color: $clr-white;
+        &:is(:hover, :active) {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
