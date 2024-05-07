@@ -1,8 +1,2 @@
 *.fig
 node_modules
-sass/components
-sass/layout
-sass/pages
-sass/themes
-sass/vendors
-css

@@ -10,7 +10,7 @@
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-using-sass-8yHaUtoC9w](https://www.frontendmentor.io/solutions/nft-preview-card-component-using-sass-8yHaUtoC9w)
 - Live Site URL: [https://codermoshiur.github.io/nft-preview-card-component/](https://codermoshiur.github.io/nft-preview-card-component/)
 
 ## My process
