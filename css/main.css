@@ -89,7 +89,7 @@ h1 {
   border-top: 0.0625rem solid #2e405a;
 }
 .footer__section {
-  max-width: 23.4375rem;
+  max-width: 90rem;
   margin-inline: auto;
   padding: 0 1.5rem;
   width: 100%;
@@ -113,7 +113,7 @@ h1 {
   place-content: center;
 }
 .nft__section {
-  max-width: 23.4375rem;
+  max-width: 90rem;
   margin-inline: auto;
   padding: 0 1.5rem;
   width: 100%;
