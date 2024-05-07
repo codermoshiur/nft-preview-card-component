@@ -7,10 +7,9 @@
   &__section {
     @include section;
     &__attribution {
-      color: $clr-white;
       font-size: 0.75rem;
       &__link {
-        color: $clr-cyan;
+        color: $clr-white;
         &:is(:hover, :active) {
           text-decoration: underline;
         }

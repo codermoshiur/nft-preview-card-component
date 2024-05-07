@@ -95,11 +95,10 @@ h1 {
   width: 100%;
 }
 .footer__section__attribution {
-  color: #ffffff;
   font-size: 0.75rem;
 }
 .footer__section__attribution__link {
-  color: #00fff8;
+  color: #ffffff;
 }
 .footer__section__attribution__link:is(:hover, :active) {
   text-decoration: underline;
