@@ -10,6 +10,10 @@
   &__section {
     @include section;
     &__card {
+      width: 100%;
+      @include mobile-landscape {
+        width: 21.875rem;
+      }
       background-color: $clr-very-dark-blue-card-bg;
       padding: 1.5rem;
       border-radius: 0.5rem;
